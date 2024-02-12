@@ -1,8 +1,40 @@
+html {
+    background-color: lightsteelblue;
+}
+
 .grid-container {
     display: grid;
 }
 
 .navgrid {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: aliceblue;
+    border: 3px solid black;
+    list-style-type: none;
+}
+
+.imggrid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+.skip {
+    visibility: hidden;
+}
+
+.curritem {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .skip {
+        visibility: visible;
+        padding: 3px;
+        background-color: beige;
+        border: 3px solid black;
+    }
 }
