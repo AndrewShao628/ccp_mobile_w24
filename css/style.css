@@ -52,7 +52,7 @@ p {
 }
 
 .skip {
-    visibility: hidden;
+    visibility: visible;
 }
 
 .curritem {
@@ -62,7 +62,7 @@ p {
 @media only screen and (max-width: 480px) {
     
     .skip {
-        visibility: visible;
+        visibility: hidden;
         padding: 3px;
         background-color: beige;
         border: 3px solid black;
