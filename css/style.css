@@ -42,12 +42,13 @@ p {
     background-color: aliceblue;
     border: 3px solid black;
     list-style-type: none;
+    padding: 10px;
 }
 
 .imggrid {
     display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
     margin: 50px;
 }
 
@@ -59,12 +60,40 @@ p {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 480px) {
-    
-    .skip {
-        visibility: hidden;
-        padding: 3px;
-        background-color: beige;
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip a {
+    position: absolute; 
+    top: -40px;
+}
+  
+.skip a:focus {
+    position: absolute; 
+    top: 20px;
+}
+
+@media only screen and (min-width: 480px) {
+    .imggrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px;
+    }
+
+    .navgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        background-color: aliceblue;
         border: 3px solid black;
+        list-style-type: none;
+        padding: 10px;
     }
 }
