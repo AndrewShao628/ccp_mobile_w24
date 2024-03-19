@@ -29,6 +29,7 @@ p {
     background-color:beige;;
     padding: 5px;
     margin: 10px;
+    font-size: large;
 }
 
 .grid-container {
@@ -44,6 +45,10 @@ p {
     list-style-type: none;
     padding: 10px;
 }
+.navgrid li{
+    display: grid;
+  place-items: center;
+}
 
 .imggrid {
     display: grid;
@@ -58,6 +63,8 @@ p {
 
 .curritem {
     font-weight: bold;
+    border: 3px black solid;
+    padding: 5px;
 }
 
 .skip a{
@@ -95,5 +102,13 @@ p {
         border: 3px solid black;
         list-style-type: none;
         padding: 10px;
+    }
+
+    p{
+        font-size: medium;
+    }
+
+    html {
+        background-color: cadetblue;
     }
 }
